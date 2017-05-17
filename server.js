@@ -37,7 +37,7 @@ app.post('/upload', upload.single('pic'), function (req, res) {
     request.post(options, (err, result) => {
         if (!err) {
             let optionsPic = {
-                url: 'http://localhost:12800/api/fruit/v1.0.0',
+                url: 'http://localhost:12800/api/object/v1.0.0',
                 method: 'POST',
                 json: true,
                 body: {
